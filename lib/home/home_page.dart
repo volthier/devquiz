@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                       percent: e.questionAwnsered / e.questions.length,
                       completed: "${e.questionAwnsered}/${e.questions.length}",
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => ChallengePage(questions: e.questions,)));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ChallengePage(questions: e.questions, title: e.title,)));
                       },
                     )).toList(),
               ))
